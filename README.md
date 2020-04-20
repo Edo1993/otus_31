@@ -53,11 +53,12 @@ ________________________________________________________________________________
 
 ```var cluster=dba.getCluster(); cluster.status()```
 
-![Img_alt](https://github.com/Edo1993/otus_31/blob/master/pics/314.png)
-
 Получаем красивый ответ
 
 ```
         "status": "OK", 
-        "statusText": "Cluster is ONLINE and can tolerate up to ONE failure.", 
+        "statusText": "Cluster is ONLINE and can tolerate up to ONE failure." 
 ```
+
+![Img_alt](https://github.com/Edo1993/otus_31/blob/master/pics/314.png)
+
