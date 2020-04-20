@@ -24,7 +24,14 @@ ________________________________________________________________________________
 
 Итог:
 
-Команда ```sudo docker-compose up -d``` в директории с файлом *docker-compose.yml* создаёт контейнеры кластера
+Команда ```docker-compose up -d``` в директории с файлом *docker-compose.yml* создаёт контейнеры кластера
 
 ![Img_alt](https://github.com/Edo1993/otus_31/blob/master/pics/311.png)
+
+Просмотр списка контейнеров ```docker ps -a```
+
 ![Img_alt](https://github.com/Edo1993/otus_31/blob/master/pics/312.png)
+
+Из предыдущего вывода берём id контейнера ```router``` - командой ```docker exec -it 339bf3b9a40a bash``` выполняем вход в контейнер.
+Для удобства - установим *mysql-shell* в контейнере
+
