@@ -32,6 +32,32 @@ ________________________________________________________________________________
 
 ![Img_alt](https://github.com/Edo1993/otus_31/blob/master/pics/312.png)
 
-Из предыдущего вывода берём id контейнера ```router``` - командой ```docker exec -it 339bf3b9a40a bash``` выполняем вход в контейнер.
+Из предыдущего вывода берём id контейнера ```router``` - командой 
+```docker exec -it 339bf3b9a40a bash```
+выполняем вход в контейнер.
 Для удобства - установим *mysql-shell* в контейнере
 
+```yum install mysql-shell -y```
+
+Запускаем оболочку
+
+```mysqlsh```
+
+В оболочке подключаемся
+
+```shell.connect('root@mysqlcluster_router_1:6446', 'pass123') ```
+
+![Img_alt](https://github.com/Edo1993/otus_31/blob/master/pics/313.png)
+
+Проверяем состояние кластера
+
+```var cluster=dba.getCluster(); cluster.status()```
+
+![Img_alt](https://github.com/Edo1993/otus_31/blob/master/pics/314.png)
+
+Получаем красивый ответ
+
+```
+        "status": "OK", 
+        "statusText": "Cluster is ONLINE and can tolerate up to ONE failure.", 
+```
