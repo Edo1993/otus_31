@@ -22,4 +22,9 @@ ________________________________________________________________________________
 6) [How To Install WordPress With Docker Compose - для нубов в docker compose(2)](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose)
 7) [21.4 Using MySQL Router with InnoDB Cluster - mysql доки](https://dev.mysql.com/doc/refman/8.0/en/mysql-innodb-cluster-using-router.html)
 
+Итог:
+
 Команда ```sudo docker-compose up -d``` в директории с файлом *docker-compose.yml* создаёт контейнеры кластера
+
+![Img_alt](https://github.com/Edo1993/otus_31/blob/master/pics/311.png)
+![Img_alt](https://github.com/Edo1993/otus_31/blob/master/pics/312.png)
